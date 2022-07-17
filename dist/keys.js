@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   // Key codes
   database: {
@@ -5,9 +7,9 @@ module.exports = {
     connectTimeout: 60 * 60 * 1000,
     acquireTimeout: 60 * 60 * 1000,
     timeout: 60 * 60 * 1000,
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'database_links'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME
   }
 };

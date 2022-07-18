@@ -34,8 +34,9 @@ app.use(
     secret: "mysecretapp",
     resave: false,
     saveUninitialized: false,
-    store: new MySQLStore(database)
+    store: new MySQLStore(database),
   }));
+  
 app.use(flash());
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));

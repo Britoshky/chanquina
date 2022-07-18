@@ -57,6 +57,7 @@ app.use(require("./routes"));
 app.use(require("./routes/authentication"));
 app.use("/links", require("./routes/links"));
 app.use("/noticias", require("./routes/noticias"));
+app.use(require("./routes/pages"));
 
 // Public folder
 app.use(express.static(path.join(__dirname, "public")));

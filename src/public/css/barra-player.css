@@ -93,7 +93,7 @@
 }
 
 ._is-main-bar-card__media {
-  display: auto;
+  display: absolute;
   height: 0;
   overflow: 0;
   padding-bottom: 100%;

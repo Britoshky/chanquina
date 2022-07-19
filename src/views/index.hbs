@@ -29,7 +29,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 
-    <link href="css/radio1.css" rel="stylesheet" />
+    <link href="css/radio.css" rel="stylesheet" />
 
     <!-- Barra Player-->
     <link rel="stylesheet" href="css/barra-player.css" />
@@ -445,51 +445,29 @@
     <section>
       <div class="_is-main-bar">
         <div class="_is-main-bar__overlay"></div>
-        <div class="_is-main-bar__container _is-container">
-          <div class="_is-main-bar__left _is-main-bar__item">
-            <div class="_is-main-bar__card _is-main-bar-card">
+        <div class="_is-main-bar__container">
+
+          <div class="_is-main-bar__item">
+            <div class="_is-main-bar-card">
               <div class="_is-main-bar-card__left">
                 <div class="_is-main-bar-card__media">
-                    <img src="img/logo.png" alt="">
+
                 </div>
               </div>
             </div>
           </div>
+
           <div class="_is-main-bar__center _is-main-bar__item">
-            <div id="title">
-              <span id="track"></span>
-              <div id="timer" hidden>0:00</div>
-              <div id="duration" hidden>0:00</div>
-            </div>
-
-            <!-- Controls -->
-            <div class="controlsOuter">
-              <div class="controlsInner">
-                <div id="loading"></div>
-                <div class="btn-player" id="playBtn"></div>
-                <div class="btn-player" id="pauseBtn"></div>
-                <div class="btn-player" id="prevBtn" hidden></div>
-                <div class="btn-player" id="nextBtn" hidden></div>
+            <!-- Stations -->
+            <div class="padding"></div>
+            <div id="station0" class="station">
+              <div class="title">
+                <div id="title0" class="subtitle"></div>
+                <div id="live0" class="live">LIVE</div>
+                <div id="playing0" class="playing">
+                  <div class="rect1"></div>
+                </div>
               </div>
-              <div class="btn-player" id="playlistBtn" hidden></div>
-              <div class="btn-player" id="volumeBtn"></div>
-            </div>
-
-            <!-- Progress -->
-            <div id="waveform" hidden></div>
-            <div id="bar" hidden></div>
-            <div id="progress"></div>
-
-            <!-- Playlist -->
-            <div id="playlist">
-              <div id="list"></div>
-            </div>
-
-            <!-- Volume -->
-            <div id="volume" class="fadeout">
-              <div id="barFull" class="bar"></div>
-              <div id="barEmpty" class="bar"></div>
-              <div id="sliderBtn"></div>
             </div>
           </div>
         </div>
@@ -505,8 +483,7 @@
 
     <!-- Bootstrap core JS-->
     <script src="js/howler.core.js"></script>
-    <script src="js/siriwave.js"></script>
-    <script src="js/player.js"></script>
+    <script src="js/radio.js"></script>
     <!-- Google Adds-->
     <script
       async

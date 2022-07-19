@@ -24,7 +24,7 @@ var Player = function(playlist) {
   this.index = 0;
 
   // Display the title of the first track.
-  track.innerHTML = '1. ' + playlist[0].title;
+  track.innerHTML = playlist[0].title;
 
   // Setup the playlist display.
   playlist.forEach(function(song) {
@@ -102,7 +102,7 @@ Player.prototype = {
     sound.play();
 
     // Update the track display.
-    track.innerHTML = (index + 1) + '. ' + data.title;
+    track.innerHTML = data.title;
 
     // Show the pause button.
     if (sound.state() === 'loaded') {
@@ -272,7 +272,7 @@ Player.prototype = {
 // Setup our new audio player class and pass it the playlist.
 var player = new Player([
   {
-    title: 'Rave Digger',
+    title: '',
     file: 'http://audio.streaminghd.cl:9134/stream',
     howl: null
   }

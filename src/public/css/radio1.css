@@ -1,5 +1,3 @@
-
-
 /* Top Info */
 #title {
   position: absolute;
@@ -51,7 +49,7 @@
   left: 50%;
   margin: 0 -170px;
 }
-.btn {
+.btn-player {
   position: absolute;
   cursor: pointer;
   opacity: 0.9;
@@ -60,7 +58,7 @@
   -webkit-user-select: none;
   user-select: none;
 }
-.btn:hover {
+.btn-player:hover {
   opacity: 1;
 }
 #playBtn {
@@ -158,8 +156,6 @@
   height: 70px;
   background-color: #fff;
   border-radius: 100%;  
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
   display: none;
 }
 @-webkit-keyframes sk-scaleout {

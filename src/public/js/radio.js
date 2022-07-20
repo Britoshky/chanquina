@@ -117,7 +117,7 @@ var radio = new Radio([
   {
     freq: '104.1',
     title: "Radio Chanquina",
-    src: 'https://audio.streaminghd.cl:9134/streamsr?type=http&nocache=18"',
+    src: 'https://audio.streaminghd.cl:9134/stream"',
     howl: null
   }
 ]);

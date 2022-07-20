@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Boostrap Icon-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -28,8 +27,9 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-
     <link href="css/radio.css" rel="stylesheet" />
+    <link href="css/whatsapp.css" rel="stylesheet" />
+
 
     <!-- Barra Player-->
     <link rel="stylesheet" href="css/barra-player.css" />
@@ -428,16 +428,27 @@
           class="z-depth-1-half map-container"
           style="height: 500px"
         >
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12954.141073341882!2d-72.53230235000001!3d-35.73764635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9666372b63dd76e1%3A0x2d3af31e59805b8a!2sRadio%20Chanquina%20FM%20104.1!5e0!3m2!1ses!2scl!4v1658341961206!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12954.141073341882!2d-72.53230235000001!3d-35.73764635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9666372b63dd76e1%3A0x2d3af31e59805b8a!2sRadio%20Chanquina%20FM%20104.1!5e0!3m2!1ses!2scl!4v1658341961206!5m2!1ses!2scl"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>
     <!--Google Maps-->
 
-   
-    <iframe id="servel" width="100%" height="70%" src="https://tarifas.servel.cl/visualizar/13075db55e41efa611ed322ac0f8d5964b781866" ></iframe>
-  
-
+    <!--Servel-->
+    <iframe
+      id="servel"
+      width="100%"
+      height="70%"
+      src="https://tarifas.servel.cl/visualizar/13075db55e41efa611ed322ac0f8d5964b781866"
+    ></iframe>
 
     <!--Player-->
     <section>
@@ -499,6 +510,14 @@
       </div>
     </section>
 
+    <a
+      href="https://api.whatsapp.com/send?phone=56995959613"
+      class="btn-wsp"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp icono"></i>
+    </a>
+
     <!-- Footer-->
     <footer class="bg-light py-5">
       <div class="container px-4 px-lg-5"><div
@@ -506,10 +525,16 @@
         >Copyright &copy; 2022 - Héctor Brito - ChanquinaFm 104.1 Mhz</div></div>
     </footer>
 
-    <!-- Bootstrap core JS-->
+    <!-- JS Player-->
     <script src="js/howler.core.js"></script>
     <script src="js/siriwave.js"></script>
     <script src="js/player.js"></script>
+    <!-- JS Whatsapp-->
+    <script
+      src="https://kit.fontawesome.com/eb496ab1a0.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Google Adds-->
     <script
       async

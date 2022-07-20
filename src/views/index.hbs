@@ -459,16 +459,43 @@
 
           <div class="_is-main-bar__center _is-main-bar__item">
             <!-- Stations -->
-            <div class="padding"></div>
-            <div id="station0" class="station">
-              <div class="title">
-                <div id="title0" class="subtitle"></div>
-                <div id="live0" class="live">LIVE</div>
-                <div id="playing0" class="playing">
-                  <div class="rect1"></div>
-                </div>
-              </div>
+            <!-- Top Info -->
+            <div id="title">
+              <span id="track" hidden></span>
+              <div id="timer" hidden>0:00</div>
+              <div id="duration" hidden>0:00</div>
             </div>
+
+            <!-- Controls -->
+            <div class="controlsOuter">
+              <div class="controlsInner">
+                <div id="loading" hidden></div>
+                <div class="btn" id="playBtn"></div>
+                <div class="btn" id="pauseBtn"></div>
+                <div class="btn" id="prevBtn"></div>
+                <div class="btn" id="nextBtn"></div>
+              </div>
+              <div class="btn" id="playlistBtn" hidden></div>
+              <div class="btn" id="volumeBtn"></div>
+            </div>
+
+            <!-- Progress -->
+            <div id="waveform" hidden></div>
+            <div id="bar" hidden></div>
+            <div id="progress" hidden></div>
+
+            <!-- Playlist -->
+            <div id="playlist" hidden>
+              <div id="list" hidden></div>
+            </div>
+
+            <!-- Volume -->
+            <div id="volume" class="fadeout">
+              <div id="barFull" class="bar"></div>
+              <div id="barEmpty" class="bar"></div>
+              <div id="sliderBtn" hidden></div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -483,7 +510,8 @@
 
     <!-- Bootstrap core JS-->
     <script src="js/howler.core.js"></script>
-    <script src="js/radio.js"></script>
+    <script src="js/siriwave.js"></script>
+    <script src="js/player.js"></script>
     <!-- Google Adds-->
     <script
       async

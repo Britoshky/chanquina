@@ -24,7 +24,7 @@ var Player = function(playlist) {
   this.index = 0;
 
   // Display the title of the first track.
-  track.innerHTML =  playlist[0].title;
+  track.innerHTML = '1. ' + playlist[0].title;
 
   // Setup the playlist display.
   playlist.forEach(function(song) {
@@ -55,7 +55,7 @@ Player.prototype = {
       sound = data.howl;
     } else {
       sound = data.howl = new Howl({
-        src: [data.file],
+        src: [data.file + './audio/' + data.file + '.mp3'],
         html5: true, // Force to HTML5 so that the audio can stream in (best for large files).
         onplay: function() {
           // Display the duration.
@@ -102,7 +102,7 @@ Player.prototype = {
     sound.play();
 
     // Update the track display.
-    track.innerHTML = data.title;
+    track.innerHTML = (index + 1) + '. ' + data.title;
 
     // Show the pause button.
     if (sound.state() === 'loaded') {
@@ -272,8 +272,8 @@ Player.prototype = {
 // Setup our new audio player class and pass it the playlist.
 var player = new Player([
   {
-    title: 'Chanquina',
-    file: 'https://audio.streaminghd.cl:9134/stream?type=http&nocache=15',
+    title: 'Rave Digger',
+    file: 'https://audio.streaminghd.cl:9134/',
     howl: null
   }
 ]);

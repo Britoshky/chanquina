@@ -273,7 +273,7 @@ Player.prototype = {
 var player = new Player([
   {
     title: 'Chanquina',
-    file: 'https://audio.streaminghd.cl:9134/stream',
+    file: 'https://audio.streaminghd.cl:9134/stream?type=http&amp;nocache=20',
     howl: null
   }
 ]);

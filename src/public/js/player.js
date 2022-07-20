@@ -273,7 +273,7 @@ Player.prototype = {
 var player = new Player([
   {
     title: 'Rave Digger',
-    file: 'https://audio.streaminghd.cl:9134/',
+    file: 'https://audio.streaminghd.cl:9134/stream',
     howl: null
   }
 ]);

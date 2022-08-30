@@ -5,7 +5,7 @@ link.src = "https://audio.streaminghd.cl:2000/stream/chanquinafm/;stream.mp3";
 
 (async () => {
   await link.play();
-})();
+});
 
 playBtn.addEventListener("click", async () => {
   if (!link.paused) {

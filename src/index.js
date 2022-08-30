@@ -52,7 +52,7 @@ app.use((req, res, next) => {
   next();
 });
 // static files
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "/public/")));
 // Routes
 app.use(require("./routes"));
 app.use(require("./routes/authentication"));
@@ -60,8 +60,7 @@ app.use("/links", require("./routes/links"));
 app.use("/noticias", require("./routes/noticias"));
 app.use(require("./routes/pages"));
 
-// Public folder
-app.use(express.static(path.join(__dirname, "public")));
+
 
 // Starting the server
 app.listen(app.get("port"), () => {

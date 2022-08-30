@@ -7,9 +7,9 @@ module.exports = {
     connectTimeout  : 60 * 60 * 1000,
     acquireTimeout  : 60 * 60 * 1000,
     timeout         : 60 * 60 * 1000,
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
+    host: "us-cdbr-east-06.cleardb.net",
+    user: "b17af9b645ea35",
+    password: "e77fac0c",
+    database: "heroku_ba1c1f8dbae87c2",
   }
 };

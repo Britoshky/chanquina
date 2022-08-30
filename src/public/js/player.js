@@ -3,9 +3,9 @@ const playBtn = document.getElementById("playBtn");
 const link = new Audio();
 link.src = "https://audio.streaminghd.cl:2000/stream/chanquinafm/;stream.mp3";
 
-// (async () => {
-//   await link.play();
-// })();
+(async () => {
+  await link.play();
+})();
 
 playBtn.addEventListener("click", async () => {
   if (!link.paused) {

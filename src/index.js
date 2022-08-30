@@ -29,13 +29,13 @@ app.engine(
 );
 app.set("view engine", ".hbs");
 // middlewares
-// app.use(
-//   session({
-//     secret: "mysecretapp",
-//     resave: false,
-//     saveUninitialized: false,
-//     store: new MySQLStore(database),
-//   }));
+app.use(
+  session({
+    secret: "mysecretapp",
+    resave: false,
+    saveUninitialized: false,
+    store: new MySQLStore(database),
+  }));
   
 app.use(flash());
 app.use(morgan("dev"));

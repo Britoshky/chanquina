@@ -1,74 +1,13 @@
-@charset "UTF-8";
-
-#bg-navbar {
-  background-color: #2f0744;
-}
-#img-programas {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
 #section {
   background-color: #aeb2ebe3;
 }
 
-#bg-titulo {
-  background-color: #09044f;
-  color: rgb(255, 255, 255);
-  outline: 2px solid rgb(13, 161, 219);
-}
-#bg-fecha {
-  background-color: #09044f;
-  color: rgb(255, 255, 255);
-}
 #bg-repro {
   background-color: #1d0335;
   color: rgb(255, 255, 255);
   opacity: 1;
 }
-#bg-titulo-chico {
-  background-color: #01326e;
-  color: rgb(255, 255, 255);
-  opacity: 1;
-}
-#fondo-noticia {
-  background-color: #f6eefd;
-}
-#titulo-noticia {
-  color: #002552;
-}
 #playBtn {
   color: rgb(13, 161, 219);
   outline: 1px solid rgb(13, 161, 219);
-}
-#bg-weather {
-  background-color: #f6eefd;
-}
-#img-noticiaG {
-  height: 430px;
-  width: 100%;
-  object-fit: cover;
-}
-#img-noticiaCh {
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-}
-#img-noticia {
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-}
-#img-prensa {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-}
-#img-arteycultura {
-  height: 350px;
-  width: 100%;
-  object-fit: cover;
-}
-#text-color-programacion {
-  color: #002552;
 }
